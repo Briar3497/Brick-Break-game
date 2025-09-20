@@ -1,4 +1,3 @@
-"""My version of the classic game Break Out. Adapted for code by LeMasterTechYT."""
 
 import pygame
 import random
