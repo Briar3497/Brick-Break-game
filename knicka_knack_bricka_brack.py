@@ -88,6 +88,7 @@ while run:
                 ball_y_direction = -1
                 ball_x_direction = random.choice([-1, 1])
                 score = 0
+                create_new = True
             if event.key == pygame.K_RIGHT and active:
                 player_direction = 1
             if event.key == pygame.K_LEFT and active:
@@ -169,8 +170,10 @@ while run:
             start_text = large_font.render('Spacebar to start', True, black)
             screen.blit(start_text, (WIDTH / 2 - start_text.get_width() / 2, HEIGHT / 2 - 50))
 
+
     score_text = font.render(f'Score: {score}', True, black)
     screen.blit(score_text, (10, 5))
+
 
     pygame.display.flip()
 
